@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MAX3232
+#
+DEF MAX3232 U 0 40 Y Y 2 L N
+F0 "U" -400 725 50 H V L BNN
+F1 "MAX3232" -400 -700 50 H V L BNN
+F2 "SO16" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -400 -600 400 700 1 0 16 f
+X C1+ 1 -600 600 200 R 40 40 1 0 B 
+X C1- 3 -600 400 200 R 40 40 1 0 B 
+X C2+ 4 -600 200 200 R 40 40 1 0 B 
+X C2- 5 -600 0 200 R 40 40 1 0 B 
+X T1IN 11 -600 -200 200 R 40 40 1 0 I 
+X T2IN 10 -600 -300 200 R 40 40 1 0 I 
+X R1OUT 12 -600 -400 200 R 40 40 1 0 O 
+X R2OUT 9 -600 -500 200 R 40 40 1 0 O 
+X V+ 2 600 500 200 L 40 40 1 0 B 
+X V- 6 600 300 200 L 40 40 1 0 B 
+X T1OUT 14 600 -200 200 L 40 40 1 0 O 
+X T2OUT 7 600 -300 200 L 40 40 1 0 O 
+X R1IN 13 600 -400 200 L 40 40 1 0 I 
+X R2IN 8 600 -500 200 L 40 40 1 0 I 
+T 900 60 -200 40 0 2 0 GND Normal 0 L B
+T 900 60 100 40 0 2 0 VCC Normal 0 L B
+X ~ 16 0 300 200 D 40 40 2 0 W 
+X ~ 15 0 -300 200 U 40 40 2 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
